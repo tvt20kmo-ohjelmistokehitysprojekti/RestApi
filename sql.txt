@@ -15,10 +15,6 @@ INSERT INTO book(name,author,isbn) VALUES('Statistics','Lisa Smith','222-333-444
 
 GRANT ALL on ci_rest_api.* to 'ci_user'@'localhost' IDENTIFIED BY 'ci_pass';
 
-//MYSQL 8
-CREATE USER 'root'@'%' IDENTIFIED BY 'test';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
-//QUIT->LOGIN
 CREATE USER 'ci_user'@'localhost' IDENTIFIED BY 'ci_pass';
 GRANT ALL on ci_rest_api.* to 'ci_user'@'localhost';
 
